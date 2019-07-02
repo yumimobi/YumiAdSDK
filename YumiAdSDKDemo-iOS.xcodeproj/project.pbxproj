@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33023205A462BC199053CD3A /* libPods-YumiAdSDKDemo-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 583CC2E741D0D961944FD539 /* libPods-YumiAdSDKDemo-iOSTests.a */; };
+		385B0A59800401FB4323C5C8 /* libPods-YumiAdSDKDemo-iOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9B93AEE20EC8A0B6AA35A8 /* libPods-YumiAdSDKDemo-iOSUITests.a */; };
 		6DA0DB2622CAF7D600CADFCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB2522CAF7D600CADFCC /* AppDelegate.m */; };
 		6DA0DB2922CAF7D600CADFCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB2822CAF7D600CADFCC /* ViewController.m */; };
 		6DA0DB2C22CAF7D600CADFCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0DB2A22CAF7D600CADFCC /* Main.storyboard */; };
@@ -16,6 +18,7 @@
 		6DA0DB3722CAF7D800CADFCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB3622CAF7D800CADFCC /* main.m */; };
 		6DA0DB4122CAF7D800CADFCC /* YumiAdSDKDemo_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB4022CAF7D800CADFCC /* YumiAdSDKDemo_iOSTests.m */; };
 		6DA0DB4C22CAF7D800CADFCC /* YumiAdSDKDemo_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB4B22CAF7D800CADFCC /* YumiAdSDKDemo_iOSUITests.m */; };
+		C88F7F357EE0CD4C9A1165A4 /* libPods-YumiAdSDKDemo-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0360EBD86D6130BB542E099F /* libPods-YumiAdSDKDemo-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028A0E7ED771B43ED34B2B64 /* Pods-YumiAdSDKDemo-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YumiAdSDKDemo-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-YumiAdSDKDemo-iOSUITests/Pods-YumiAdSDKDemo-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0360EBD86D6130BB542E099F /* libPods-YumiAdSDKDemo-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YumiAdSDKDemo-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4980F35CE1916E8F4E992B71 /* Pods-YumiAdSDKDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YumiAdSDKDemo-iOS.release.xcconfig"; path = "Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		583CC2E741D0D961944FD539 /* libPods-YumiAdSDKDemo-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YumiAdSDKDemo-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A6BD2A437E3FB80B5C60DD /* Pods-YumiAdSDKDemo-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YumiAdSDKDemo-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-YumiAdSDKDemo-iOSUITests/Pods-YumiAdSDKDemo-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A9B93AEE20EC8A0B6AA35A8 /* libPods-YumiAdSDKDemo-iOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YumiAdSDKDemo-iOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA0DB2122CAF7D600CADFCC /* YumiAdSDKDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YumiAdSDKDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA0DB2422CAF7D600CADFCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DA0DB2522CAF7D600CADFCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +62,9 @@
 		6DA0DB4722CAF7D800CADFCC /* YumiAdSDKDemo-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YumiAdSDKDemo-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA0DB4B22CAF7D800CADFCC /* YumiAdSDKDemo_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YumiAdSDKDemo_iOSUITests.m; sourceTree = "<group>"; };
 		6DA0DB4D22CAF7D800CADFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76509B8F8736B06B74820119 /* Pods-YumiAdSDKDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YumiAdSDKDemo-iOS.debug.xcconfig"; path = "Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8B6495FACD40F82566C3A34E /* Pods-YumiAdSDKDemo-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YumiAdSDKDemo-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-YumiAdSDKDemo-iOSTests/Pods-YumiAdSDKDemo-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9714B5668B4F6091EA288433 /* Pods-YumiAdSDKDemo-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YumiAdSDKDemo-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-YumiAdSDKDemo-iOSTests/Pods-YumiAdSDKDemo-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88F7F357EE0CD4C9A1165A4 /* libPods-YumiAdSDKDemo-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33023205A462BC199053CD3A /* libPods-YumiAdSDKDemo-iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +88,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385B0A59800401FB4323C5C8 /* libPods-YumiAdSDKDemo-iOSUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ACD9C347EA0202ECF47EF4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0360EBD86D6130BB542E099F /* libPods-YumiAdSDKDemo-iOS.a */,
+				583CC2E741D0D961944FD539 /* libPods-YumiAdSDKDemo-iOSTests.a */,
+				6A9B93AEE20EC8A0B6AA35A8 /* libPods-YumiAdSDKDemo-iOSUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		621CF1BC7FE155C1BF7869C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76509B8F8736B06B74820119 /* Pods-YumiAdSDKDemo-iOS.debug.xcconfig */,
+				4980F35CE1916E8F4E992B71 /* Pods-YumiAdSDKDemo-iOS.release.xcconfig */,
+				8B6495FACD40F82566C3A34E /* Pods-YumiAdSDKDemo-iOSTests.debug.xcconfig */,
+				9714B5668B4F6091EA288433 /* Pods-YumiAdSDKDemo-iOSTests.release.xcconfig */,
+				63A6BD2A437E3FB80B5C60DD /* Pods-YumiAdSDKDemo-iOSUITests.debug.xcconfig */,
+				028A0E7ED771B43ED34B2B64 /* Pods-YumiAdSDKDemo-iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6DA0DB1822CAF7D600CADFCC = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +126,8 @@
 				6DA0DB3F22CAF7D800CADFCC /* YumiAdSDKDemo-iOSTests */,
 				6DA0DB4A22CAF7D800CADFCC /* YumiAdSDKDemo-iOSUITests */,
 				6DA0DB2222CAF7D600CADFCC /* Products */,
+				621CF1BC7FE155C1BF7869C6 /* Pods */,
+				0ACD9C347EA0202ECF47EF4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DA0DB5022CAF7D800CADFCC /* Build configuration list for PBXNativeTarget "YumiAdSDKDemo-iOS" */;
 			buildPhases = (
+				25C314E5A675C0DB41D0B275 /* [CP] Check Pods Manifest.lock */,
 				6DA0DB1D22CAF7D600CADFCC /* Sources */,
 				6DA0DB1E22CAF7D600CADFCC /* Frameworks */,
 				6DA0DB1F22CAF7D600CADFCC /* Resources */,
+				C34718E6E1B96AFBFD11BE4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DA0DB5322CAF7D800CADFCC /* Build configuration list for PBXNativeTarget "YumiAdSDKDemo-iOSTests" */;
 			buildPhases = (
+				578CA76858E07F34A56AC25D /* [CP] Check Pods Manifest.lock */,
 				6DA0DB3822CAF7D800CADFCC /* Sources */,
 				6DA0DB3922CAF7D800CADFCC /* Frameworks */,
 				6DA0DB3A22CAF7D800CADFCC /* Resources */,
@@ -177,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DA0DB5622CAF7D800CADFCC /* Build configuration list for PBXNativeTarget "YumiAdSDKDemo-iOSUITests" */;
 			buildPhases = (
+				3D6227E387BDE0D2ED1984B2 /* [CP] Check Pods Manifest.lock */,
 				6DA0DB4322CAF7D800CADFCC /* Sources */,
 				6DA0DB4422CAF7D800CADFCC /* Frameworks */,
 				6DA0DB4522CAF7D800CADFCC /* Resources */,
@@ -259,6 +304,101 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25C314E5A675C0DB41D0B275 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YumiAdSDKDemo-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D6227E387BDE0D2ED1984B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YumiAdSDKDemo-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		578CA76858E07F34A56AC25D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YumiAdSDKDemo-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C34718E6E1B96AFBFD11BE4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/YumiAdSDK/YumiMediationSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/YumiAdSDK/YumiAdsSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/YumiAdSDK/ZplayMuteListener.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiMediationSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiAdsSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZplayMuteListener.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DA0DB1D22CAF7D600CADFCC /* Sources */ = {
@@ -374,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,11 +577,13 @@
 		};
 		6DA0DB5122CAF7D800CADFCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76509B8F8736B06B74820119 /* Pods-YumiAdSDKDemo-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG25A6M88T;
 				INFOPLIST_FILE = "YumiAdSDKDemo-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +596,13 @@
 		};
 		6DA0DB5222CAF7D800CADFCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4980F35CE1916E8F4E992B71 /* Pods-YumiAdSDKDemo-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG25A6M88T;
 				INFOPLIST_FILE = "YumiAdSDKDemo-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +615,7 @@
 		};
 		6DA0DB5422CAF7D800CADFCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B6495FACD40F82566C3A34E /* Pods-YumiAdSDKDemo-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +635,7 @@
 		};
 		6DA0DB5522CAF7D800CADFCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9714B5668B4F6091EA288433 /* Pods-YumiAdSDKDemo-iOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -509,6 +655,7 @@
 		};
 		6DA0DB5722CAF7D800CADFCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A6BD2A437E3FB80B5C60DD /* Pods-YumiAdSDKDemo-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG25A6M88T;
@@ -527,6 +674,7 @@
 		};
 		6DA0DB5822CAF7D800CADFCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 028A0E7ED771B43ED34B2B64 /* Pods-YumiAdSDKDemo-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG25A6M88T;
