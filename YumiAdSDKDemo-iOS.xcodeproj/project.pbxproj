@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DA0DB2622CAF7D600CADFCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB2522CAF7D600CADFCC /* AppDelegate.m */; };
+		6DA0DB2922CAF7D600CADFCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB2822CAF7D600CADFCC /* ViewController.m */; };
+		6DA0DB2C22CAF7D600CADFCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0DB2A22CAF7D600CADFCC /* Main.storyboard */; };
+		6DA0DB2F22CAF7D600CADFCC /* YumiAdSDKDemo_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB2D22CAF7D600CADFCC /* YumiAdSDKDemo_iOS.xcdatamodeld */; };
+		6DA0DB3122CAF7D800CADFCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0DB3022CAF7D800CADFCC /* Assets.xcassets */; };
+		6DA0DB3422CAF7D800CADFCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA0DB3222CAF7D800CADFCC /* LaunchScreen.storyboard */; };
+		6DA0DB3722CAF7D800CADFCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB3622CAF7D800CADFCC /* main.m */; };
+		6DA0DB4122CAF7D800CADFCC /* YumiAdSDKDemo_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB4022CAF7D800CADFCC /* YumiAdSDKDemo_iOSTests.m */; };
+		6DA0DB4C22CAF7D800CADFCC /* YumiAdSDKDemo_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA0DB4B22CAF7D800CADFCC /* YumiAdSDKDemo_iOSUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DA0DB3D22CAF7D800CADFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DA0DB1922CAF7D600CADFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DA0DB2022CAF7D600CADFCC;
+			remoteInfo = "YumiAdSDKDemo-iOS";
+		};
+		6DA0DB4822CAF7D800CADFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DA0DB1922CAF7D600CADFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DA0DB2022CAF7D600CADFCC;
+			remoteInfo = "YumiAdSDKDemo-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DA0DB2122CAF7D600CADFCC /* YumiAdSDKDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YumiAdSDKDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA0DB2422CAF7D600CADFCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6DA0DB2522CAF7D600CADFCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6DA0DB2722CAF7D600CADFCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6DA0DB2822CAF7D600CADFCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6DA0DB2B22CAF7D600CADFCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DA0DB2E22CAF7D600CADFCC /* YumiAdSDKDemo_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YumiAdSDKDemo_iOS.xcdatamodel; sourceTree = "<group>"; };
+		6DA0DB3022CAF7D800CADFCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DA0DB3322CAF7D800CADFCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DA0DB3522CAF7D800CADFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA0DB3622CAF7D800CADFCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DA0DB3C22CAF7D800CADFCC /* YumiAdSDKDemo-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YumiAdSDKDemo-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA0DB4022CAF7D800CADFCC /* YumiAdSDKDemo_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YumiAdSDKDemo_iOSTests.m; sourceTree = "<group>"; };
+		6DA0DB4222CAF7D800CADFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA0DB4722CAF7D800CADFCC /* YumiAdSDKDemo-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YumiAdSDKDemo-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA0DB4B22CAF7D800CADFCC /* YumiAdSDKDemo_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YumiAdSDKDemo_iOSUITests.m; sourceTree = "<group>"; };
+		6DA0DB4D22CAF7D800CADFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DA0DB1E22CAF7D600CADFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA0DB3922CAF7D800CADFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA0DB4422CAF7D800CADFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DA0DB1822CAF7D600CADFCC = {
+			isa = PBXGroup;
+			children = (
+				6DA0DB2322CAF7D600CADFCC /* YumiAdSDKDemo-iOS */,
+				6DA0DB3F22CAF7D800CADFCC /* YumiAdSDKDemo-iOSTests */,
+				6DA0DB4A22CAF7D800CADFCC /* YumiAdSDKDemo-iOSUITests */,
+				6DA0DB2222CAF7D600CADFCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DA0DB2222CAF7D600CADFCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DA0DB2122CAF7D600CADFCC /* YumiAdSDKDemo-iOS.app */,
+				6DA0DB3C22CAF7D800CADFCC /* YumiAdSDKDemo-iOSTests.xctest */,
+				6DA0DB4722CAF7D800CADFCC /* YumiAdSDKDemo-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DA0DB2322CAF7D600CADFCC /* YumiAdSDKDemo-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6DA0DB2422CAF7D600CADFCC /* AppDelegate.h */,
+				6DA0DB2522CAF7D600CADFCC /* AppDelegate.m */,
+				6DA0DB2722CAF7D600CADFCC /* ViewController.h */,
+				6DA0DB2822CAF7D600CADFCC /* ViewController.m */,
+				6DA0DB2A22CAF7D600CADFCC /* Main.storyboard */,
+				6DA0DB3022CAF7D800CADFCC /* Assets.xcassets */,
+				6DA0DB3222CAF7D800CADFCC /* LaunchScreen.storyboard */,
+				6DA0DB3522CAF7D800CADFCC /* Info.plist */,
+				6DA0DB3622CAF7D800CADFCC /* main.m */,
+				6DA0DB2D22CAF7D600CADFCC /* YumiAdSDKDemo_iOS.xcdatamodeld */,
+			);
+			path = "YumiAdSDKDemo-iOS";
+			sourceTree = "<group>";
+		};
+		6DA0DB3F22CAF7D800CADFCC /* YumiAdSDKDemo-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DA0DB4022CAF7D800CADFCC /* YumiAdSDKDemo_iOSTests.m */,
+				6DA0DB4222CAF7D800CADFCC /* Info.plist */,
+			);
+			path = "YumiAdSDKDemo-iOSTests";
+			sourceTree = "<group>";
+		};
+		6DA0DB4A22CAF7D800CADFCC /* YumiAdSDKDemo-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DA0DB4B22CAF7D800CADFCC /* YumiAdSDKDemo_iOSUITests.m */,
+				6DA0DB4D22CAF7D800CADFCC /* Info.plist */,
+			);
+			path = "YumiAdSDKDemo-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DA0DB2022CAF7D600CADFCC /* YumiAdSDKDemo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA0DB5022CAF7D800CADFCC /* Build configuration list for PBXNativeTarget "YumiAdSDKDemo-iOS" */;
+			buildPhases = (
+				6DA0DB1D22CAF7D600CADFCC /* Sources */,
+				6DA0DB1E22CAF7D600CADFCC /* Frameworks */,
+				6DA0DB1F22CAF7D600CADFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YumiAdSDKDemo-iOS";
+			productName = "YumiAdSDKDemo-iOS";
+			productReference = 6DA0DB2122CAF7D600CADFCC /* YumiAdSDKDemo-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DA0DB3B22CAF7D800CADFCC /* YumiAdSDKDemo-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA0DB5322CAF7D800CADFCC /* Build configuration list for PBXNativeTarget "YumiAdSDKDemo-iOSTests" */;
+			buildPhases = (
+				6DA0DB3822CAF7D800CADFCC /* Sources */,
+				6DA0DB3922CAF7D800CADFCC /* Frameworks */,
+				6DA0DB3A22CAF7D800CADFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DA0DB3E22CAF7D800CADFCC /* PBXTargetDependency */,
+			);
+			name = "YumiAdSDKDemo-iOSTests";
+			productName = "YumiAdSDKDemo-iOSTests";
+			productReference = 6DA0DB3C22CAF7D800CADFCC /* YumiAdSDKDemo-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DA0DB4622CAF7D800CADFCC /* YumiAdSDKDemo-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DA0DB5622CAF7D800CADFCC /* Build configuration list for PBXNativeTarget "YumiAdSDKDemo-iOSUITests" */;
+			buildPhases = (
+				6DA0DB4322CAF7D800CADFCC /* Sources */,
+				6DA0DB4422CAF7D800CADFCC /* Frameworks */,
+				6DA0DB4522CAF7D800CADFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DA0DB4922CAF7D800CADFCC /* PBXTargetDependency */,
+			);
+			name = "YumiAdSDKDemo-iOSUITests";
+			productName = "YumiAdSDKDemo-iOSUITests";
+			productReference = 6DA0DB4722CAF7D800CADFCC /* YumiAdSDKDemo-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DA0DB1922CAF7D600CADFCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = MichaelTang;
+				TargetAttributes = {
+					6DA0DB2022CAF7D600CADFCC = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					6DA0DB3B22CAF7D800CADFCC = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 6DA0DB2022CAF7D600CADFCC;
+					};
+					6DA0DB4622CAF7D800CADFCC = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 6DA0DB2022CAF7D600CADFCC;
+					};
+				};
+			};
+			buildConfigurationList = 6DA0DB1C22CAF7D600CADFCC /* Build configuration list for PBXProject "YumiAdSDKDemo-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DA0DB1822CAF7D600CADFCC;
+			productRefGroup = 6DA0DB2222CAF7D600CADFCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DA0DB2022CAF7D600CADFCC /* YumiAdSDKDemo-iOS */,
+				6DA0DB3B22CAF7D800CADFCC /* YumiAdSDKDemo-iOSTests */,
+				6DA0DB4622CAF7D800CADFCC /* YumiAdSDKDemo-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DA0DB1F22CAF7D600CADFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA0DB3422CAF7D800CADFCC /* LaunchScreen.storyboard in Resources */,
+				6DA0DB3122CAF7D800CADFCC /* Assets.xcassets in Resources */,
+				6DA0DB2C22CAF7D600CADFCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA0DB3A22CAF7D800CADFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA0DB4522CAF7D800CADFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DA0DB1D22CAF7D600CADFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA0DB2F22CAF7D600CADFCC /* YumiAdSDKDemo_iOS.xcdatamodeld in Sources */,
+				6DA0DB2922CAF7D600CADFCC /* ViewController.m in Sources */,
+				6DA0DB3722CAF7D800CADFCC /* main.m in Sources */,
+				6DA0DB2622CAF7D600CADFCC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA0DB3822CAF7D800CADFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA0DB4122CAF7D800CADFCC /* YumiAdSDKDemo_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA0DB4322CAF7D800CADFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA0DB4C22CAF7D800CADFCC /* YumiAdSDKDemo_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DA0DB3E22CAF7D800CADFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DA0DB2022CAF7D600CADFCC /* YumiAdSDKDemo-iOS */;
+			targetProxy = 6DA0DB3D22CAF7D800CADFCC /* PBXContainerItemProxy */;
+		};
+		6DA0DB4922CAF7D800CADFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DA0DB2022CAF7D600CADFCC /* YumiAdSDKDemo-iOS */;
+			targetProxy = 6DA0DB4822CAF7D800CADFCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DA0DB2A22CAF7D600CADFCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA0DB2B22CAF7D600CADFCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DA0DB3222CAF7D800CADFCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA0DB3322CAF7D800CADFCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DA0DB4E22CAF7D800CADFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DA0DB4F22CAF7D800CADFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DA0DB5122CAF7D800CADFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG25A6M88T;
+				INFOPLIST_FILE = "YumiAdSDKDemo-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tfeng.YumiAdSDKDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DA0DB5222CAF7D800CADFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG25A6M88T;
+				INFOPLIST_FILE = "YumiAdSDKDemo-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tfeng.YumiAdSDKDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DA0DB5422CAF7D800CADFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG25A6M88T;
+				INFOPLIST_FILE = "YumiAdSDKDemo-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tfeng.YumiAdSDKDemo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YumiAdSDKDemo-iOS.app/YumiAdSDKDemo-iOS";
+			};
+			name = Debug;
+		};
+		6DA0DB5522CAF7D800CADFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG25A6M88T;
+				INFOPLIST_FILE = "YumiAdSDKDemo-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tfeng.YumiAdSDKDemo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YumiAdSDKDemo-iOS.app/YumiAdSDKDemo-iOS";
+			};
+			name = Release;
+		};
+		6DA0DB5722CAF7D800CADFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG25A6M88T;
+				INFOPLIST_FILE = "YumiAdSDKDemo-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tfeng.YumiAdSDKDemo-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "YumiAdSDKDemo-iOS";
+			};
+			name = Debug;
+		};
+		6DA0DB5822CAF7D800CADFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG25A6M88T;
+				INFOPLIST_FILE = "YumiAdSDKDemo-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tfeng.YumiAdSDKDemo-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "YumiAdSDKDemo-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DA0DB1C22CAF7D600CADFCC /* Build configuration list for PBXProject "YumiAdSDKDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA0DB4E22CAF7D800CADFCC /* Debug */,
+				6DA0DB4F22CAF7D800CADFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA0DB5022CAF7D800CADFCC /* Build configuration list for PBXNativeTarget "YumiAdSDKDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA0DB5122CAF7D800CADFCC /* Debug */,
+				6DA0DB5222CAF7D800CADFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA0DB5322CAF7D800CADFCC /* Build configuration list for PBXNativeTarget "YumiAdSDKDemo-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA0DB5422CAF7D800CADFCC /* Debug */,
+				6DA0DB5522CAF7D800CADFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DA0DB5622CAF7D800CADFCC /* Build configuration list for PBXNativeTarget "YumiAdSDKDemo-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA0DB5722CAF7D800CADFCC /* Debug */,
+				6DA0DB5822CAF7D800CADFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6DA0DB2D22CAF7D600CADFCC /* YumiAdSDKDemo_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6DA0DB2E22CAF7D600CADFCC /* YumiAdSDKDemo_iOS.xcdatamodel */,
+			);
+			currentVersion = 6DA0DB2E22CAF7D600CADFCC /* YumiAdSDKDemo_iOS.xcdatamodel */;
+			path = YumiAdSDKDemo_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6DA0DB1922CAF7D600CADFCC /* Project object */;
+}
