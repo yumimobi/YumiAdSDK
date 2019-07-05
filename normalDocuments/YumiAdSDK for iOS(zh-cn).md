@@ -81,7 +81,8 @@
 
    如果您是初次使用 CocoaPods，请查阅 [CocoaPods Guides](https://guides.cocoapods.org/using/using-cocoapods.html) 。
 
-   - 如果您只需要 YumiAdSDK 
+  
+  请打开项目的 Podfile 并将下面这行代码添加到应用的目标中：
 
      ```ruby
      pod "YumiAdSDK"

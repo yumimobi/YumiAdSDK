@@ -81,7 +81,7 @@
 
   If use CocoaPods for the first time, please view [CocoaPods Guides](https://guides.cocoapods.org/using/using-cocoapods.html).
 
-  - If need YumiAdSDK only:
+  Open your project's Podfile and add this line to your app's target:
 
     ```ruby
     pod "YumiAdSDK"
