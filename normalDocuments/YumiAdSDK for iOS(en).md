@@ -286,9 +286,9 @@
   }
   ```
 
-#### Reward Video
+#### Rewarded Video
 
-- ##### Initialization and reward video request
+- ##### Initialization and rewarded video request
 
   ```objective-c
   #import <YumiAdSDK/YumiMediationVideo.h>
