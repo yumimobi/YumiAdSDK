@@ -108,7 +108,7 @@
     
    3. 配置脚本
 
-      按照如图所示步骤，添加 YumiAdSDKConfig.xcconfig
+      按照如图所示步骤，添加 YumiMediationSDKConfig.xcconfig
 
       ![ios02](resources/ios02.png) 
 

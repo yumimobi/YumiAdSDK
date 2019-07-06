@@ -267,7 +267,7 @@
 				6DA0DB1D22CAF7D600CADFCC /* Sources */,
 				6DA0DB1E22CAF7D600CADFCC /* Frameworks */,
 				6DA0DB1F22CAF7D600CADFCC /* Resources */,
-				38F3EF44B7CA04301AF9A0BA /* [CP] Copy Pods Resources */,
+				86A913438700FAB93FED11BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -412,34 +412,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		38F3EF44B7CA04301AF9A0BA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS-resources.sh",
-				"${PODS_ROOT}/YumiAdSDK/Resources/YumiMediationSDK.bundle",
-				"${PODS_ROOT}/YumiAdSDK/Resources/YumiAdsSDK.bundle",
-				"${PODS_ROOT}/YumiAdSDK/Resources/ZplayMuteListener.bundle",
-				"${PODS_ROOT}/YumiAdSDK/Resources/YumiDependency.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiMediationSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiAdsSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZplayMuteListener.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiDependency.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3D6227E387BDE0D2ED1984B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -482,6 +454,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86A913438700FAB93FED11BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS-resources.sh",
+				"${PODS_ROOT}/YumiAdSDK/Resources/YumiMediationSDK.bundle",
+				"${PODS_ROOT}/YumiAdSDK/Resources/YumiAdsSDK.bundle",
+				"${PODS_ROOT}/YumiAdSDK/Resources/ZplayMuteListener.bundle",
+				"${PODS_ROOT}/YumiAdSDK/Resources/baidumobadsdk.bundle",
+				"${PODS_ROOT}/YumiAdSDK/Resources/YumiMediationGDT.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiMediationSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiAdsSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZplayMuteListener.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baidumobadsdk.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiMediationGDT.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
