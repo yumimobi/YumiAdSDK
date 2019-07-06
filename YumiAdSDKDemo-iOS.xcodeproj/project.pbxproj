@@ -421,19 +421,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS-resources.sh",
-				"${PODS_ROOT}/YumiAdSDK/YumiAdSDK/Resources/YumiAdsSDK.bundle",
-				"${PODS_ROOT}/YumiAdSDK/YumiAdSDK/Resources/YumiDependency.bundle",
-				"${PODS_ROOT}/YumiAdSDK/YumiAdSDK/Resources/YumiMediationSDK.bundle",
-				"${PODS_ROOT}/YumiAdSDK/YumiAdSDK/Resources/ZplayMuteListener.bundle",
+				"${PODS_ROOT}/YumiAdSDK/Resources/YumiMediationSDK.bundle",
+				"${PODS_ROOT}/YumiAdSDK/Resources/YumiAdsSDK.bundle",
+				"${PODS_ROOT}/YumiAdSDK/Resources/ZplayMuteListener.bundle",
+				"${PODS_ROOT}/YumiAdSDK/Resources/YumiDependency.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiAdsSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiDependency.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiMediationSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiAdsSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZplayMuteListener.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiDependency.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -673,6 +673,7 @@
 			baseConfigurationReference = 76509B8F8736B06B74820119 /* Pods-YumiAdSDKDemo-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = L5UE3EGW93;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -704,6 +705,7 @@
 			baseConfigurationReference = 4980F35CE1916E8F4E992B71 /* Pods-YumiAdSDKDemo-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = L5UE3EGW93;
 				FRAMEWORK_SEARCH_PATHS = (
