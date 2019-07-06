@@ -106,7 +106,7 @@
 
 3. Script configuration
 
-   Add YumiAdSDKConfig according to steps as shown.
+   Add YumiMediationSDKConfig according to steps as shown.
 
    ![ios02](resources/ios02.png) 
 
