@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -462,24 +462,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS-resources.sh",
-				"${PODS_ROOT}/YumiAdSDK/Resources/YumiMediationSDK.bundle",
-				"${PODS_ROOT}/YumiAdSDK/Resources/YumiAdsSDK.bundle",
-				"${PODS_ROOT}/YumiAdSDK/Resources/ZplayMuteListener.bundle",
-				"${PODS_ROOT}/YumiAdSDK/Resources/baidumobadsdk.bundle",
-				"${PODS_ROOT}/YumiAdSDK/Resources/YumiMediationGDT.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiMediationSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiAdsSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZplayMuteListener.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baidumobadsdk.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YumiMediationGDT.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-YumiAdSDKDemo-iOS/Pods-YumiAdSDKDemo-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
