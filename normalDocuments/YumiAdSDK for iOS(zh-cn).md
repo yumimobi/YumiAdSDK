@@ -51,7 +51,7 @@
 
    iOS 8.0 或更高版本。
 
-3. [Demo 获取地址](https://github.com/yumimobi/YumiAdSDKDemo-iOS.git)         
+3. [Demo 获取地址](https://github.com/yumimobi/YumiAdSDKDemo-iOS/tree/branch_0.1.1)         
 ## 开发环境配置
 
 - ### App Transport Security
@@ -99,7 +99,7 @@
 
 - 手动集成 YumiAdSDK
 
-   1. 下载 ([SDKDownloadPage-iOS](https://github.com/yumimobi/YumiAdSDKDemo-iOS/blob/master/normalDocuments/iOSDownloadPage.md)) YumiAdSDK
+   1. 下载 ([SDKDownloadPage-iOS](https://github.com/yumimobi/YumiAdSDKDemo-iOS/blob/branch_0.1.1/normalDocuments/iOSDownloadPage.md)) YumiAdSDK
 
    2. 添加 YumiAdSDK 到您的工程
 

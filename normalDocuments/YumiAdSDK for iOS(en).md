@@ -50,7 +50,7 @@
 
    iOS 8.0 and above.
 
-3. [ Get Demo ](https://github.com/yumimobi/YumiAdSDKDemo-iOS.git)
+3. [ Get Demo ](https://github.com/yumimobi/YumiAdSDKDemo-iOS/tree/branch_0.1.1)
 
 ## Develop Encironment Configuration 
 
@@ -98,7 +98,7 @@
 
 - Manually Integrating YumiAdSDK
 
-  1. Download ([SDKDownloadPage-iOS](https://github.com/yumimobi/YumiAdSDKDemo-iOS/blob/master/normalDocuments/iOSDownloadPage.md)) YumiAdSDK.
+  1. Download ([SDKDownloadPage-iOS](https://github.com/yumimobi/YumiAdSDKDemo-iOS/blob/branch_0.1.1/normalDocuments/iOSDownloadPage.md)) YumiAdSDK.
   2. Add YumiAdSDK to your project
 
   <img src="resources/addFiles.png" width="280" height="320"> 
