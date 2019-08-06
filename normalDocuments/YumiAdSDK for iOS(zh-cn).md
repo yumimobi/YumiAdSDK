@@ -86,7 +86,7 @@
   请打开项目的 Podfile 并将下面这行代码添加到应用的目标中：
 
      ```ruby
-     pod "YumiAdSDK"
+     pod 'YumiAdSDK',"0.1.1"
      ```
 
    接下来在命令行界面中运行：
