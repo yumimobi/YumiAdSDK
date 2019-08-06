@@ -1,4 +1,4 @@
-### SDK Download List 1.0.0
+### SDK Download List 
 
 |              Name               | Version | Support AdType |               DownloadLink               | Note |
 | :-----------------------------: | :-----: | :------------: | :--------------------------------------: | :--: |
