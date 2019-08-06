@@ -2,7 +2,7 @@
 
 target 'YumiAdSDKDemo-iOS' do
 
-   pod 'YumiAdSDK'
+   pod 'YumiAdSDK',"0.1.1"
 
   target 'YumiAdSDKDemo-iOSTests' do
     inherit! :search_paths
