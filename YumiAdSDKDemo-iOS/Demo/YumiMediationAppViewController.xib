@@ -20,6 +20,7 @@
                 <outlet property="showLogAtBottomButton" destination="6vN-kx-Me6" id="xUd-rU-YXk"/>
                 <outlet property="showLogConsole" destination="zbG-cg-jV4" id="Bki-9u-LNf"/>
                 <outlet property="showLogTopButton" destination="9ny-uk-SQC" id="BGf-SB-BbF"/>
+                <outlet property="showTestVC" destination="ydO-Em-TZO" id="hRh-jh-RnM"/>
                 <outlet property="smartLabel" destination="gI5-QI-02D" id="L8a-5H-XiR"/>
                 <outlet property="switchIsSmartSize" destination="uVq-4s-ENR" id="tmN-Op-cXJ"/>
                 <outlet property="view" destination="mMx-BE-UUi" id="h65-b3-QpF"/>
@@ -268,12 +269,25 @@
                                 <action selector="showLogOnTextViewTop:" destination="-1" eventType="touchUpInside" id="dPH-x9-2gm"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydO-Em-TZO">
+                            <rect key="frame" x="5" y="5" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="PVd-ct-DIE"/>
+                            </constraints>
+                            <state key="normal" title="ShowTestVC"/>
+                            <connections>
+                                <action selector="clickShowTestVC:" destination="-1" eventType="touchUpInside" id="d4N-Sg-y5i"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="ydO-Em-TZO" firstAttribute="leading" secondItem="piD-wC-XbG" secondAttribute="leading" constant="5" id="1bl-11-yqF"/>
                         <constraint firstItem="Nol-aU-AHe" firstAttribute="top" secondItem="piD-wC-XbG" secondAttribute="top" constant="5" id="1ww-sg-D5i"/>
+                        <constraint firstItem="ydO-Em-TZO" firstAttribute="height" secondItem="9ny-uk-SQC" secondAttribute="height" id="5DS-af-ui3"/>
                         <constraint firstItem="6vN-kx-Me6" firstAttribute="width" secondItem="Nol-aU-AHe" secondAttribute="width" id="C90-aC-zme"/>
                         <constraint firstItem="6vN-kx-Me6" firstAttribute="height" secondItem="Nol-aU-AHe" secondAttribute="height" id="HOd-gt-DmL"/>
+                        <constraint firstItem="ydO-Em-TZO" firstAttribute="centerY" secondItem="9ny-uk-SQC" secondAttribute="centerY" id="LcN-XE-5IS"/>
                         <constraint firstItem="9ny-uk-SQC" firstAttribute="width" secondItem="6vN-kx-Me6" secondAttribute="width" id="Mrs-Lg-Xvb"/>
                         <constraint firstItem="6vN-kx-Me6" firstAttribute="leading" secondItem="9ny-uk-SQC" secondAttribute="trailing" constant="12" id="Pfa-cN-Utm"/>
                         <constraint firstItem="6vN-kx-Me6" firstAttribute="centerY" secondItem="Nol-aU-AHe" secondAttribute="centerY" id="Rho-Ss-o8w"/>
@@ -306,5 +320,11 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <point key="canvasLocation" x="-3" y="-157"/>
         </switch>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qUX-BR-KGs">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+            <point key="canvasLocation" x="245.625" y="397.5"/>
+        </button>
     </objects>
 </document>
