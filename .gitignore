@@ -62,3 +62,4 @@ Products/
 *.DS_Store
 .clang-format
 FBSnapshotTestCaseSpec/
+fastlane/README.md

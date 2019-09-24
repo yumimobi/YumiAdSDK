@@ -1,4 +1,3 @@
-# YumiAdSDKDemo-iOS v1.1.1
 ## Document
 
 [**YumiAdSDK for iOS(zh-cn)**](https://github.com/yumimobi/YumiAdSDKDemo-iOS/blob/master/normalDocuments/YumiAdSDK%20for%20iOS(zh-cn).md)

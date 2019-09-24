@@ -1,5 +1,5 @@
 source "https://github.com/CocoaPods/Specs"
-# platform :ios, '9.0'
+platform :ios, '8.0'
 
 target 'YumiAdSDKDemo-iOS' do
 
