@@ -131,7 +131,7 @@
 - ##### Initialization and banner request
 
   ```objective-c
-  #import <YumiMediationSDK/YumiMediationBannerView.h>
+  #import <YumiAdSDK/YumiMediationBannerView.h>
 
   @interface ViewController ()<YumiMediationBannerViewDelegate>
   @property (nonatomic) YumiMediationBannerView *yumiBanner;
