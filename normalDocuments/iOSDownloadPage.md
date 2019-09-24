@@ -2,7 +2,7 @@
 
 |              Name               | Version | Support AdType |               DownloadLink               | Note |
 | :-----------------------------: | :-----: | :------------: | :--------------------------------------: | :--: |
-|        YumiAdSDK         |  1.1.1  |   B+I+V+N+S    | [link](https://adsdk.yumimobi.com/iOS/YumiAdSDK/1.1.1_20005.tar.bz2) |      |
+|        YumiAdSDK         |  1.2.0  |   B+I+V+N+S    | [link](https://adsdk.yumimobi.com/iOS/YumiAdSDK/1.2.0_20000.tar.bz2) |      |
 | YumiAdSDKConfig.xcconfig |    |                | [link](https://adsdk.yumimobi.com/iOS/Archived/YumiMediationSDKConfig.xcconfig) |      |
 |                                 |         |                |                                          |      |
 
