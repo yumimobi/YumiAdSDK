@@ -12,8 +12,8 @@
 #import "YumiMediationAppViewController.h"
 #import "YumiMediationInitializeInfoUserDefaults.h"
 #import "YumiMediationInitializeModel.h"
-#import <YumiAdSDK/YumiTool.h>
 #import <YumiAdSDK/YumiMediationGDPRManager.h>
+#import <YumiAdSDK/YumiTool.h>
 
 #define PLACEMENTIDLENGTH 1
 
@@ -79,8 +79,9 @@
     if (self.bannerSize == kYumiMediationAdViewSmartBannerLandscape) {
         self.smartBannerLandscape.on = YES;
     }
-    
-    self.gdprSwitch.on = ([[YumiMediationGDPRManager sharedGDPRManager] getConsentStatus] == YumiMediationConsentStatusPersonalized) ;
+
+    self.gdprSwitch.on =
+        ([[YumiMediationGDPRManager sharedGDPRManager] getConsentStatus] == YumiMediationConsentStatusPersonalized);
 }
 
 - (void)initializePlacementIDs {
@@ -227,12 +228,13 @@
 
 - (IBAction)handleGDPRValue:(UISwitch *)sender {
     if (sender.on) {
-        [[YumiMediationGDPRManager sharedGDPRManager] updateNetworksConsentStatus:YumiMediationConsentStatusPersonalized];
+        [[YumiMediationGDPRManager sharedGDPRManager]
+            updateNetworksConsentStatus:YumiMediationConsentStatusPersonalized];
         return;
     }
-     [[YumiMediationGDPRManager sharedGDPRManager] updateNetworksConsentStatus:YumiMediationConsentStatusNonPersonalized];
+    [[YumiMediationGDPRManager sharedGDPRManager]
+        updateNetworksConsentStatus:YumiMediationConsentStatusNonPersonalized];
 }
-
 
 #pragma mark : -UITextFieldDelegate
 

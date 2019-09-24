@@ -14,6 +14,7 @@
                 <outlet property="checkVideoButton" destination="kLu-4I-Vh9" id="vaH-bF-XP4"/>
                 <outlet property="clearLogButton" destination="Nol-aU-AHe" id="Zfg-rX-By5"/>
                 <outlet property="disableAutoRefresh" destination="LSk-Lw-Pra" id="CJp-KJ-yRz"/>
+                <outlet property="disableAutoRefreshLabel" destination="c8P-vC-73c" id="tM1-j8-r4V"/>
                 <outlet property="presentOrCloseAdButton" destination="o1b-gO-A5f" id="Jwc-pp-oL6"/>
                 <outlet property="requestAdButton" destination="xCB-Ge-5UR" id="uSA-wr-8gX"/>
                 <outlet property="selectAdType" destination="iJ3-dq-9tc" id="AyN-2S-PxD"/>

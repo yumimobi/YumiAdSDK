@@ -21,7 +21,6 @@
 #import "PADemoUtils.h"
 #import <YumiAdSDK/YumiMediationSplash.h>
 
-
 typedef NS_ENUM(NSUInteger, YumiMediationAdLogType) {
     YumiMediationAdLogTypeBanner,
     YumiMediationAdLogTypeInterstitial,
@@ -79,6 +78,7 @@ static int nativeAdNumber = 4;
 
 @property (nonatomic) NSMutableArray<YumiMediationNativeModel *> *totalNativeAdArray;
 @property (weak, nonatomic) IBOutlet UISwitch *disableAutoRefresh;
+@property (weak, nonatomic) IBOutlet UILabel *disableAutoRefreshLabel;
 
 @end
 
@@ -87,6 +87,7 @@ static int nativeAdNumber = 4;
 - (instancetype)init {
     if (self = [super init]) {
         self = [self createVCFromCustomBundle];
+        self.modalPresentationStyle = UIModalPresentationFullScreen;
     }
     return self;
 }
@@ -363,8 +364,7 @@ static int nativeAdNumber = 4;
                 weakSelf.interstitial =
                     [[YumiMediationInterstitial alloc] initWithPlacementID:weakSelf.interstitialPlacementID
                                                                  channelID:weakSelf.channelID
-                                                                 versionID:weakSelf.versionID
-                                                        rootViewController:weakSelf];
+                                                                 versionID:weakSelf.versionID];
                 weakSelf.interstitial.delegate = weakSelf;
                 break;
 
@@ -414,7 +414,7 @@ static int nativeAdNumber = 4;
             break;
         case 1:
             if ([self.interstitial isReady]) {
-                [self.interstitial present];
+                [self.interstitial presentFromRootViewController:self];
             }
             break;
         case 2:
@@ -457,6 +457,8 @@ static int nativeAdNumber = 4;
             self.presentOrCloseAdButton.hidden = NO;
             self.smartLabel.hidden = NO;
             self.switchIsSmartSize.hidden = NO;
+            self.disableAutoRefresh.hidden = NO;
+            self.disableAutoRefreshLabel.hidden = NO;
             self.adType = YumiMediationAdLogTypeBanner;
             dispatch_async(dispatch_get_main_queue(), ^{
                 weakSelf.showLogConsole.text = self.bannerAdLog;
@@ -470,6 +472,8 @@ static int nativeAdNumber = 4;
             [self.requestAdButton setTitle:@"Request interstitial" forState:UIControlStateNormal];
             [self.presentOrCloseAdButton setTitle:@"Show interstitial" forState:UIControlStateNormal];
             self.checkVideoButton.hidden = YES;
+            self.disableAutoRefresh.hidden = YES;
+            self.disableAutoRefreshLabel.hidden = YES;
             self.presentOrCloseAdButton.hidden = NO;
             self.smartLabel.hidden = YES;
             self.switchIsSmartSize.hidden = YES;
@@ -489,6 +493,8 @@ static int nativeAdNumber = 4;
             self.checkVideoButton.hidden = NO;
             self.presentOrCloseAdButton.hidden = NO;
             self.smartLabel.hidden = YES;
+            self.disableAutoRefresh.hidden = YES;
+            self.disableAutoRefreshLabel.hidden = YES;
             self.switchIsSmartSize.hidden = YES;
             self.adType = YumiMediationAdLogTypeVideo;
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -504,6 +510,8 @@ static int nativeAdNumber = 4;
             [self.requestAdButton setTitle:@"Request splash" forState:UIControlStateNormal];
             self.checkVideoButton.hidden = YES;
             self.presentOrCloseAdButton.hidden = YES;
+            self.disableAutoRefresh.hidden = YES;
+            self.disableAutoRefreshLabel.hidden = YES;
             self.smartLabel.hidden = YES;
             self.switchIsSmartSize.hidden = YES;
             self.adType = YumiMediationAdLogTypeSplash;
@@ -520,6 +528,8 @@ static int nativeAdNumber = 4;
             [self.checkVideoButton setTitle:@"Remove  native" forState:UIControlStateNormal];
             [self.presentOrCloseAdButton setTitle:@"Show new native" forState:UIControlStateNormal];
             self.checkVideoButton.hidden = YES;
+            self.disableAutoRefresh.hidden = YES;
+            self.disableAutoRefreshLabel.hidden = YES;
             self.presentOrCloseAdButton.hidden = NO;
             self.smartLabel.hidden = YES;
             self.switchIsSmartSize.hidden = YES;
@@ -781,22 +791,24 @@ static int nativeAdNumber = 4;
 - (void)yumiMediationNativeAdDidClick:(YumiMediationNativeModel *)nativeAd {
     [self showLogConsoleWith:@"native did clicked " adLogType:YumiMediationAdLogTypeNative];
 }
+
 - (void)yumiMediationNativeExpressAdRenderSuccess:(YumiMediationNativeModel *)nativeModel {
     [self showLogConsoleWith:@"native express render success " adLogType:YumiMediationAdLogTypeNative];
-    
+
     [self showNativeExpressAdView:nativeModel];
-    
 }
 
 - (void)yumiMediationNativeExpressAd:(YumiMediationNativeModel *)nativeModel didRenderFail:(NSString *)errorMsg {
-    [self showLogConsoleWith:[NSString stringWithFormat:@"native express render fail. error is == %@",errorMsg] adLogType:YumiMediationAdLogTypeNative];
+    [self showLogConsoleWith:[NSString stringWithFormat:@"native express render fail. error is == %@", errorMsg]
+                   adLogType:YumiMediationAdLogTypeNative];
 }
 
 - (void)yumiMediationNativeExpressAdDidClickCloseButton:(YumiMediationNativeModel *)nativeModel {
     [self showLogConsoleWith:@"native express did click close button " adLogType:YumiMediationAdLogTypeNative];
-    
+
     [self closeNativeView];
 }
+
 #pragma mark : YumiMediationNativeVideoControllerDelegate
 /// Tells the delegate that the video controller has began or resumed playing a video.
 - (void)yumiMediationNativeVideoControllerDidPlayVideo:(YumiMediationNativeVideoController *)videoController {
@@ -820,70 +832,72 @@ static int nativeAdNumber = 4;
 
 - (void)registerNativeView:(YumiMediationNativeModel *)adData {
     __weak typeof(self) weakSelf = self;
-    
+
     dispatch_async(dispatch_get_main_queue(), ^{
-        
+
         [weakSelf showLogConsoleWith:@"register new native Ad" adLogType:YumiMediationAdLogTypeNative];
-        
+
         weakSelf.nativeView = [[NSBundle mainBundle] loadNibNamed:@"YumiNativeView" owner:nil options:nil].firstObject;
         weakSelf.nativeView.frame = weakSelf.view.frame;
         [weakSelf.nativeView.closeButton addTarget:weakSelf
                                             action:@selector(closeNativeView)
                                   forControlEvents:UIControlEventTouchDown];
-        
+
         if ([adData isExpired]) {
             [weakSelf showLogConsoleWith:@"native Ad had expired " adLogType:YumiMediationAdLogTypeNative];
             return;
         }
-        
+
         adData.videoController.delegate = self;
         [weakSelf.nativeAd registerViewForInteraction:weakSelf.nativeView.adView
                                   clickableAssetViews:@{
-                                                        YumiMediationUnifiedNativeTitleAsset : weakSelf.nativeView.title,
-                                                        YumiMediationUnifiedNativeDescAsset : weakSelf.nativeView.desc,
-                                                        YumiMediationUnifiedNativeCoverImageAsset : weakSelf.nativeView.coverImage,
-                                                        YumiMediationUnifiedNativeMediaViewAsset : weakSelf.nativeView.coverImage,
-                                                        YumiMediationUnifiedNativeIconAsset : weakSelf.nativeView.icon,
-                                                        YumiMediationUnifiedNativeCallToActionAsset : weakSelf.nativeView.callToAction
-                                                        }
+                                      YumiMediationUnifiedNativeTitleAsset : weakSelf.nativeView.title,
+                                      YumiMediationUnifiedNativeDescAsset : weakSelf.nativeView.desc,
+                                      YumiMediationUnifiedNativeCoverImageAsset : weakSelf.nativeView.coverImage,
+                                      YumiMediationUnifiedNativeMediaViewAsset : weakSelf.nativeView.coverImage,
+                                      YumiMediationUnifiedNativeIconAsset : weakSelf.nativeView.icon,
+                                      YumiMediationUnifiedNativeCallToActionAsset : weakSelf.nativeView.callToAction
+                                  }
                                    withViewController:weakSelf
                                              nativeAd:adData];
     });
 }
 
 - (void)showNativeView:(YumiMediationNativeModel *)adData {
-    
+
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        
+
         [weakSelf showLogConsoleWith:@"show new native Ad" adLogType:YumiMediationAdLogTypeNative];
         [weakSelf.view addSubview:weakSelf.nativeView];
-        
+
         weakSelf.nativeView.title.text = adData.title;
         weakSelf.nativeView.desc.text = adData.desc;
         weakSelf.nativeView.callToAction.text = adData.callToAction;
         weakSelf.nativeView.coverImage.image = adData.coverImage.image;
         weakSelf.nativeView.icon.image = adData.icon.image;
-        
+
         [weakSelf.nativeAd reportImpression:adData view:weakSelf.nativeView.adView];
     });
 }
 
-- (void)showNativeExpressAdView:(YumiMediationNativeModel *)adData{
+- (void)showNativeExpressAdView:(YumiMediationNativeModel *)adData {
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         [weakSelf showLogConsoleWith:@"show native  express Ad" adLogType:YumiMediationAdLogTypeNative];
         [weakSelf.view addSubview:weakSelf.nativeView];
         [weakSelf.nativeView.adView addSubview:adData.expressAdView];
-        
+
         CGSize adSize = adData.expressAdView.bounds.size;
-        adData.expressAdView.frame = CGRectMake((weakSelf.nativeView.adView.bounds.size.width - adSize.width) * 0.5, (weakSelf.nativeView.adView.bounds.size.height - adSize.height) *0.5, adSize.width, adSize.height);
-        
+        adData.expressAdView.frame = CGRectMake((weakSelf.nativeView.adView.bounds.size.width - adSize.width) * 0.5,
+                                                (weakSelf.nativeView.adView.bounds.size.height - adSize.height) * 0.5,
+                                                adSize.width, adSize.height);
+
         [weakSelf.nativeAd reportImpression:adData view:weakSelf.nativeView.adView];
-        
+
     });
-    
 }
+
 #pragma mark : - YumiViewControllerDelegate
 - (void)modifyPlacementID:(NSString *)placementID
                 channelID:(NSString *)channelID
