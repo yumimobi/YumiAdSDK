@@ -18,7 +18,6 @@
 #import <YumiAdSDK/YumiMediationVideo.h>
 #import <YumiAdSDK/YumiTest.h>
 #import <YumiAdSDK/YumiTool.h>
-#import "YumiBannerTestViewController.h"
 #import "PADemoUtils.h"
 #import <YumiAdSDK/YumiMediationSplash.h>
 
@@ -79,7 +78,7 @@ static int nativeAdNumber = 4;
 
 @property (nonatomic) NSMutableArray<YumiMediationNativeModel *> *totalNativeAdArray;
 @property (weak, nonatomic) IBOutlet UISwitch *disableAutoRefresh;
-@property (weak, nonatomic) IBOutlet UIButton *showTestVC;
+@property (weak, nonatomic) IBOutlet UILabel *disableAutoRefreshLabel;
 
 @end
 
@@ -88,6 +87,7 @@ static int nativeAdNumber = 4;
 - (instancetype)init {
     if (self = [super init]) {
         self = [self createVCFromCustomBundle];
+        self.modalPresentationStyle = UIModalPresentationFullScreen;
     }
     return self;
 }
@@ -258,7 +258,7 @@ static int nativeAdNumber = 4;
                                                             preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"NO"
                                               style:UIAlertActionStyleDefault
-                                            handler:^(UIAlertAction *_Nonnull action) {
+                                            handler:^(UIAlertAction *_Nonnull action){
                                                 [[PADemoUtils shared] removeTagFile];
                                             }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"YES"
@@ -454,10 +454,11 @@ static int nativeAdNumber = 4;
             [self.requestAdButton setTitle:@"Show banner" forState:UIControlStateNormal];
             [self.presentOrCloseAdButton setTitle:@"Remove banner" forState:UIControlStateNormal];
             self.checkVideoButton.hidden = YES;
-            self.showTestVC.hidden = NO;
             self.presentOrCloseAdButton.hidden = NO;
             self.smartLabel.hidden = NO;
             self.switchIsSmartSize.hidden = NO;
+            self.disableAutoRefresh.hidden = NO;
+            self.disableAutoRefreshLabel.hidden = NO;
             self.adType = YumiMediationAdLogTypeBanner;
             dispatch_async(dispatch_get_main_queue(), ^{
                 weakSelf.showLogConsole.text = self.bannerAdLog;
@@ -471,7 +472,8 @@ static int nativeAdNumber = 4;
             [self.requestAdButton setTitle:@"Request interstitial" forState:UIControlStateNormal];
             [self.presentOrCloseAdButton setTitle:@"Show interstitial" forState:UIControlStateNormal];
             self.checkVideoButton.hidden = YES;
-            self.showTestVC.hidden = YES;
+            self.disableAutoRefresh.hidden = YES;
+            self.disableAutoRefreshLabel.hidden = YES;
             self.presentOrCloseAdButton.hidden = NO;
             self.smartLabel.hidden = YES;
             self.switchIsSmartSize.hidden = YES;
@@ -490,8 +492,9 @@ static int nativeAdNumber = 4;
             [self.presentOrCloseAdButton setTitle:@"Play video" forState:UIControlStateNormal];
             self.checkVideoButton.hidden = NO;
             self.presentOrCloseAdButton.hidden = NO;
-            self.showTestVC.hidden = YES;
             self.smartLabel.hidden = YES;
+            self.disableAutoRefresh.hidden = YES;
+            self.disableAutoRefreshLabel.hidden = YES;
             self.switchIsSmartSize.hidden = YES;
             self.adType = YumiMediationAdLogTypeVideo;
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -506,8 +509,9 @@ static int nativeAdNumber = 4;
         case 3: {
             [self.requestAdButton setTitle:@"Request splash" forState:UIControlStateNormal];
             self.checkVideoButton.hidden = YES;
-            self.showTestVC.hidden = YES;
             self.presentOrCloseAdButton.hidden = YES;
+            self.disableAutoRefresh.hidden = YES;
+            self.disableAutoRefreshLabel.hidden = YES;
             self.smartLabel.hidden = YES;
             self.switchIsSmartSize.hidden = YES;
             self.adType = YumiMediationAdLogTypeSplash;
@@ -524,7 +528,8 @@ static int nativeAdNumber = 4;
             [self.checkVideoButton setTitle:@"Remove  native" forState:UIControlStateNormal];
             [self.presentOrCloseAdButton setTitle:@"Show new native" forState:UIControlStateNormal];
             self.checkVideoButton.hidden = YES;
-            self.showTestVC.hidden = YES;
+            self.disableAutoRefresh.hidden = YES;
+            self.disableAutoRefreshLabel.hidden = YES;
             self.presentOrCloseAdButton.hidden = NO;
             self.smartLabel.hidden = YES;
             self.switchIsSmartSize.hidden = YES;
@@ -607,15 +612,8 @@ static int nativeAdNumber = 4;
     [[UIApplication sharedApplication].keyWindow.layer transitionWithAnimType:TransitionAnimTypeRamdom
                                                                       subType:TransitionSubtypesFromRamdom
                                                                         curve:TransitionCurveRamdom
-                                                                     duration:0.5];
+                                                                     duration:2.0];
 }
-
-- (IBAction)clickShowTestVC:(id)sender {
-    YumiBannerTestViewController *bannerTestVC = [[YumiBannerTestViewController alloc] init];
-    bannerTestVC.placementID = self.bannerPlacementID;
-    [self presentViewController:bannerTestVC animated:NO completion:nil];
-}
-
 
 #pragma mark : getter
 - (YumiMediationBannerView *)bannerView {
@@ -653,7 +651,6 @@ static int nativeAdNumber = 4;
 - (void)yumiMediationBannerViewDidLoad:(YumiMediationBannerView *)adView {
     self.isConfigSuccess = YES;
     [self showLogConsoleWith:@"banner view did load" adLogType:YumiMediationAdLogTypeBanner];
-    [self.bannerView trackImpressionEventByOutsider];
 }
 
 - (void)yumiMediationBannerView:(YumiMediationBannerView *)adView didFailWithError:(YumiMediationError *)error {
