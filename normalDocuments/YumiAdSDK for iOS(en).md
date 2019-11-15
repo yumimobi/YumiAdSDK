@@ -90,6 +90,7 @@
   Open your project's Podfile and add this line to your app's target:
 
     ```ruby
+    # Please be sure to specify the version number. Please contact us for details.
     pod "YumiAdSDK"
     ```
 
