@@ -4,8 +4,10 @@
 | :-----------------------------: | :-----: | :------------: | :--------------------------------------: | :--: |
 |        YumiAdSDK         |  1.2.0  |   B+I+V+N+S    | [link](https://adsdk.yumimobi.com/iOS/YumiAdSDK/1.2.0_20000.tar.bz2) |      |
 |        YumiAdSDK         |  4.3.4.100  |   B+I+V+N+S    | [link](https://adsdk.yumimobi.com/iOS/YumiAdSDK/4.3.4.100_2019111503.tar.bz2) |      |
-| YumiAdSDKConfig.xcconfig |    |                | [link](https://adsdk.yumimobi.com/iOS/Archived/YumiMediationSDKConfig.xcconfig) |      |
-|                                 |         |                |                                          |      |
+| YumiAdSDK | 4.4.1.000 | B+I+V+N+S | [link](https://adsdk.yumimobi.com/iOS/YumiAdSDK/4.4.1.000_2019120401.tar.bz2) |      |
+| YumiAdSDKConfig.xcconfig |         |                | [link](https://adsdk.yumimobi.com/iOS/Archived/YumiMediationSDKConfig.xcconfig) |      |
+
+
 
 | shortName |   FullName   |
 | :-------: | :----------: |
@@ -14,3 +16,4 @@
 |     V     |    Video     |
 |     N     |    Native    |
 |     S     |    Splash    |
+
