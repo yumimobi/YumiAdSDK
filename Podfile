@@ -1,10 +1,11 @@
 source "https://github.com/CocoaPods/Specs"
+source "https://github.com/yumimobi/Specs"
 
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 target 'YumiAdSDKDemo-iOS' do
 
-   pod 'YumiAdSDK',"4.4.1.000"
+   pod 'YumiAdSDK',"4.5.0.000"
   target 'YumiAdSDKDemo-iOSTests' do
     inherit! :search_paths
     # Pods for testing
