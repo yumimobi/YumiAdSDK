@@ -52,9 +52,9 @@
 
 2. 开发环境
 
-   Xcode 7.0 或更高版本。
+   Xcode 10.0 或更高版本。
 
-   iOS 8.0 或更高版本。
+   iOS 9.0 或更高版本。
 
 3. [Demo 获取地址](https://github.com/yumimobi/YumiAdSDKDemo-iOS.git)         
 ## 开发环境配置
@@ -71,7 +71,7 @@
       <key>NSAllowsArbitraryLoads</key>
       <true/>
   </dict>
-  ```
+  ```  
 
   ![ats_exceptions](resources/ats_exceptions.png)
 

@@ -51,9 +51,9 @@
 
 2. Develop Environment
 
-   Xcode 7.0 and above. 
+   Xcode 10.0 and above. 
 
-   iOS 8.0 and above.
+   iOS 9.0 and above.
 
 3. [ Get Demo ](https://github.com/yumimobi/YumiAdSDKDemo-iOS.git)
 
