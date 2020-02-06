@@ -5,7 +5,7 @@ platform :ios, '9.0'
 
 target 'YumiAdSDKDemo-iOS' do
 
-   pod 'YumiAdSDK',"4.5.1.000"
+   pod 'YumiAdSDK',"4.5.1.100"
   target 'YumiAdSDKDemo-iOSTests' do
     inherit! :search_paths
     # Pods for testing
