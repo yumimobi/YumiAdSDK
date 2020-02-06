@@ -1,16 +1,16 @@
 PODS:
-  - YumiAdSDK (4.5.0.000)
+  - YumiAdSDK (4.5.1.100)
 
 DEPENDENCIES:
-  - YumiAdSDK (= 4.5.0.000)
+  - YumiAdSDK (= 4.5.1.100)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/yumimobi/Specs.git:
     - YumiAdSDK
 
 SPEC CHECKSUMS:
-  YumiAdSDK: f7a20c4b4ee57db7d43a82988e6d12648dc30eee
+  YumiAdSDK: 9ca37d7dfb6e3a2423ee34a7d6edf861b3eda742
 
-PODFILE CHECKSUM: 517c6aaceb58d922fc8a0acfbba95c0af5d49172
+PODFILE CHECKSUM: 4cb47124aec820ab2c1ffe7dcc836c4275b16013
 
 COCOAPODS: 1.8.4
