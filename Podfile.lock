@@ -1,26 +1,25 @@
 PODS:
-  - YumiAdAdapterBytedance (4.5.1):
-    - YumiAdSDK (~> 4.5.1.100)
-    - YumiBytedanceAds (= 2.7.5.2)
-  - YumiAdSDK (4.5.1.100)
+  - YumiAdSDK (4.5.1.400):
+    - YumiBytedanceAds
+    - YumiGDT
   - YumiBytedanceAds (2.7.5.2)
+  - YumiGDT (4.11.3)
 
 DEPENDENCIES:
-  - YumiAdAdapterBytedance (= 4.5.1)
-  - YumiAdSDK (= 4.5.1.100)
+  - YumiAdSDK (= 4.5.1.400)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - YumiBytedanceAds
+    - YumiGDT
   https://github.com/yumimobi/Specs.git:
-    - YumiAdAdapterBytedance
     - YumiAdSDK
 
 SPEC CHECKSUMS:
-  YumiAdAdapterBytedance: 33f9441269eab48d030d3cd45fe680e3043d217f
-  YumiAdSDK: bcdf776309398054e37a39fc7bc35631ebf9fdf8
+  YumiAdSDK: f7a3e1527f3c475ac609264bfebae7cccdd04a46
   YumiBytedanceAds: 70d9fd9051b8ef81fca1df39b025a357766989a8
+  YumiGDT: 26de8b0ebd5e546f44b7367af6ccf44a380c9f47
 
-PODFILE CHECKSUM: 0b1e641ede931db8e3d4f3028d6d7c04d0b719a8
+PODFILE CHECKSUM: 375d91c0c470b065c76c8baa10be306f5ed5756d
 
 COCOAPODS: 1.8.4
