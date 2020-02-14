@@ -1,24 +1,30 @@
 PODS:
-  - YumiAdSDK (4.5.1.400):
-    - YumiBytedanceAds
-    - YumiGDT
+  - YumiAdSDK (4.5.1.000):
+    - YumiMediationAdapterBytedance (= 4.5.1)
+    - YumiMediationSDK (= 4.5.1)
   - YumiBytedanceAds (2.7.5.2)
-  - YumiGDT (4.11.3)
+  - YumiMediationAdapterBytedance (4.5.1):
+    - YumiBytedanceAds (= 2.7.5.2)
+    - YumiMediationSDK (~> 4.5.0)
+  - YumiMediationSDK (4.5.1)
 
 DEPENDENCIES:
-  - YumiAdSDK (= 4.5.1.400)
+  - YumiAdSDK (= 4.5.1.000)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - YumiAdSDK
     - YumiBytedanceAds
-    - YumiGDT
+  https://github.com/yumimobi/Specs.git:
+    - YumiAdSDK
+    - YumiMediationAdapterBytedance
+    - YumiMediationSDK
 
 SPEC CHECKSUMS:
-  YumiAdSDK: 36c941d1a30e22dcf6b7398965ae5c64ef54a666
+  YumiAdSDK: 974434ff428c2bc26bf2b7a259ce104c459a6178
   YumiBytedanceAds: 70d9fd9051b8ef81fca1df39b025a357766989a8
-  YumiGDT: 26de8b0ebd5e546f44b7367af6ccf44a380c9f47
+  YumiMediationAdapterBytedance: 37f67100afe2f670e26c63aa23baf2dfdc600a05
+  YumiMediationSDK: 5d936916fcc2570bca4970461e4e7212c97b6fc4
 
-PODFILE CHECKSUM: b1de12e2db468d7827e58216059a114e9596ded4
+PODFILE CHECKSUM: b3f314e7cc68d7c552a2bc2f59f96f345fe33f87
 
 COCOAPODS: 1.8.4
