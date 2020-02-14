@@ -8,7 +8,7 @@
 
 @import UIKit;
 #import "YumiCommonHeaderFile.h"
-#import <YumiAdSDK/YumiMediationConstants.h>
+#import <YumiMediationSDK/YumiMediationConstants.h>
 
 static NSString *const placementID = @"5xmpgti4";
 static NSString *const channelID = @"";

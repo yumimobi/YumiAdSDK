@@ -12,8 +12,8 @@
 #import "YumiMediationAppViewController.h"
 #import "YumiMediationInitializeInfoUserDefaults.h"
 #import "YumiMediationInitializeModel.h"
-#import <YumiAdSDK/YumiMediationGDPRManager.h>
-#import <YumiAdSDK/YumiTool.h>
+#import <YumiMediationSDK/YumiMediationGDPRManager.h>
+#import <YumiMediationSDK/YumiTool.h>
 
 #define PLACEMENTIDLENGTH 1
 

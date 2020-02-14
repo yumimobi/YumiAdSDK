@@ -10,16 +10,16 @@
 #import "CALayer+Transition.h"
 #import "YumiNativeView.h"
 #import "YumiViewController.h"
-#import <YumiAdSDK/YumiMediationAdapterRegistry.h>
-#import <YumiAdSDK/YumiMediationBannerView.h>
-#import <YumiAdSDK/YumiMediationInterstitial.h>
-#import <YumiAdSDK/YumiMediationNativeAd.h>
-#import <YumiAdSDK/YumiMediationNativeAdConfiguration.h>
-#import <YumiAdSDK/YumiMediationVideo.h>
-#import <YumiAdSDK/YumiTest.h>
-#import <YumiAdSDK/YumiTool.h>
+#import <YumiMediationSDK/YumiMediationAdapterRegistry.h>
+#import <YumiMediationSDK/YumiMediationBannerView.h>
+#import <YumiMediationSDK/YumiMediationInterstitial.h>
+#import <YumiMediationSDK/YumiMediationNativeAd.h>
+#import <YumiMediationSDK/YumiMediationNativeAdConfiguration.h>
+#import <YumiMediationSDK/YumiMediationVideo.h>
+#import <YumiMediationSDK/YumiTest.h>
+#import <YumiMediationSDK/YumiTool.h>
 #import "PADemoUtils.h"
-#import <YumiAdSDK/YumiMediationSplash.h>
+#import <YumiMediationSDK/YumiMediationSplash.h>
 
 typedef NS_ENUM(NSUInteger, YumiMediationAdLogType) {
     YumiMediationAdLogTypeBanner,
