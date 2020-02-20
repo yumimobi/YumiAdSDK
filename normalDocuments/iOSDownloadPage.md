@@ -6,6 +6,7 @@
 |        YumiAdSDK         | 4.3.4.100 |   B+I+V+N+S    |  [link](https://adsdk.yumimobi.com/iOS/YumiAdSDK/4.3.4.100_2019111503.tar.bz2)  |       |
 |        YumiAdSDK         | 4.4.1.000 |   B+I+V+N+S    |  [link](https://adsdk.yumimobi.com/iOS/YumiAdSDK/4.4.1.000_2019120401.tar.bz2)  |       |
 |        YumiAdSDK         | 4.5.0.000 |   B+I+V+N+S    |  [link](https://adsdk.yumimobi.com/iOS/YumiAdSDK/4.5.0.000_2019121901.tar.bz2)  |       |
+|        YumiAdSDK         | 4.5.1.000 |   B+I+V+N+S    |  [link](https://adsdk.yumimobi.com/iOS/YumiAdSDK/YumiAdSDK_20200220.zip)  |       |
 | YumiAdSDKConfig.xcconfig |           |                | [link](https://adsdk.yumimobi.com/iOS/Archived/YumiMediationSDKConfig.xcconfig) |       |
 
 
@@ -17,4 +18,5 @@
 |     V     | RewardedVideo |
 |     N     |    Native     |
 |     S     |    Splash     |
+
 
