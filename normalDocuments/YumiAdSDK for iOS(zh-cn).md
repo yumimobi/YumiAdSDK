@@ -134,7 +134,7 @@
 - ##### 初始化及请求横幅
 
   ```objective-c
-  #import <YumiAdSDK/YumiMediationBannerView.h>
+  #import <YumiMediationSDK/YumiMediationBannerView.h>
 
   @interface ViewController ()<YumiMediationBannerViewDelegate>
   @property (nonatomic) YumiMediationBannerView *yumiBanner;
@@ -241,7 +241,7 @@ typedef NS_ENUM(NSUInteger, YumiMediationAdViewBannerSize) {
 - ##### 初始化及请求插屏
 
   ```objective-c
-  #import <YumiAdSDK/YumiMediationInterstitial.h>
+  #import <YumiMediationSDK/YumiMediationInterstitial.h>
 
   @interface ViewController ()<YumiMediationInterstitialDelegate>
   @property (nonatomic) YumiMediationInterstitial *yumiInterstitial;
@@ -316,7 +316,7 @@ typedef NS_ENUM(NSUInteger, YumiMediationAdViewBannerSize) {
 
   ```objective-c
   //视频广告位会自动加载广告，您无需重复调用。
-  #import <YumiAdSDK/YumiMediationVideo.h>
+  #import <YumiMediationSDK/YumiMediationVideo.h>
    
   @implementation ViewController
   - (void)viewDidLoad {
@@ -388,7 +388,7 @@ typedef NS_ENUM(NSUInteger, YumiMediationAdViewBannerSize) {
   例如：在您 `AppDelegate.m` 的 `application:didFinishLaunchingWithOptions:` 方法中。
 
   ```objective-c
-  #import <YumiAdSDK/YumiMediationSplash.h>
+  #import <YumiMediationSDK/YumiMediationSplash.h>
 
   @interface AppDelegate () <YumiMediationSplashAdDelegate>
 
@@ -469,8 +469,8 @@ typedef NS_ENUM(NSUInteger, YumiMediationAdViewBannerSize) {
 - ##### 初始化及请求
 
   ```objectivec 
-  #import <YumiAdSDK/YumiMediationNativeAd.h>
-  #import <YumiAdSDK/YumiMediationNativeAdConfiguration.h>
+  #import <YumiMediationSDK/YumiMediationNativeAd.h>
+  #import <YumiMediationSDK/YumiMediationNativeAdConfiguration.h>
   
   @interface ViewController ()<YumiMediationNativeAdDelegate>
   @property (nonatomic) YumiMediationNativeAd *yumiNativeAd;

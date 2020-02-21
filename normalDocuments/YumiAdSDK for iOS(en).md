@@ -132,7 +132,7 @@
 - ##### Initialization and banner request
 
   ```objective-c
-  #import <YumiAdSDK/YumiMediationBannerView.h>
+  #import <YumiMediationSDK/YumiMediationBannerView.h>
 
   @interface ViewController ()<YumiMediationBannerViewDelegate>
   @property (nonatomic) YumiMediationBannerView *yumiBanner;
@@ -240,7 +240,7 @@
 - ##### Initialization and interstitial request
 
   ```objective-c
-  #import <YumiAdSDK/YumiMediationInterstitial.h>
+  #import <YumiMediationSDK/YumiMediationInterstitial.h>
 
   @interface ViewController ()<YumiMediationInterstitialDelegate>
   @property (nonatomic) YumiMediationInterstitial *yumiInterstitial;
@@ -314,7 +314,7 @@
 - ##### Initialization and reward video request
 
   ```objective-c
-  #import <YumiAdSDK/YumiMediationVideo.h>
+  #import <YumiMediationSDK/YumiMediationVideo.h>
    
   @implementation ViewController
   //the reward video placement will auto cached.
@@ -387,7 +387,7 @@
   for example：in your `AppDelegate.m`  `application:didFinishLaunchingWithOptions:` 
 
   ```objective-c
-  #import <YumiAdSDK/YumiMediationSplash.h>
+  #import <YumiMediationSDK/YumiMediationSplash.h>
 
   @interface AppDelegate () <YumiMediationSplashAdDelegate>
 
@@ -469,8 +469,8 @@
 - ##### Initialization and request
 
   ```objective-c
-  #import <YumiAdSDK/YumiMediationNativeAd.h>
-  #import <YumiAdSDK/YumiMediationNativeAdConfiguration.h>
+  #import <YumiMediationSDK/YumiMediationNativeAd.h>
+  #import <YumiMediationSDK/YumiMediationNativeAdConfiguration.h>
 
   @interface ViewController ()<YumiMediationNativeAdDelegate>
   @property (nonatomic) YumiMediationNativeAd *yumiNativeAd;
